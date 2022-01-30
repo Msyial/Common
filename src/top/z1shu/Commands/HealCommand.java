@@ -1,10 +1,10 @@
-package zishu.xiatools.Commands;
+package top.z1shu.Commands;
 
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
-import zishu.xiatools.XIATools;
+import top.z1shu.Main;
 
 public class HealCommand implements CommandExecutor {
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args){
@@ -16,10 +16,10 @@ public class HealCommand implements CommandExecutor {
                         Player p = (Player) sender;
                         p.setFoodLevel(20);
                         p.setHealth(20.0D);
-                        sender.sendMessage(XIATools.prefix + " 已恢复");
+                        sender.sendMessage(Main.TipPerfix + "已恢复。");
                     }
                 } else {
-                    sender.sendMessage(XIATools.prefix + XIATools.noPermission);
+                    sender.sendMessage(Main.WarnPrefix + Main.NoPermission);
                     return true;
 
                 }

@@ -1,4 +1,4 @@
-package zishu.xiatools.Commands;
+package top.z1shu.Commands;
 
 import org.bukkit.Location;
 import org.bukkit.World;
@@ -8,8 +8,8 @@ import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.potion.PotionEffect;
 import org.bukkit.potion.PotionEffectType;
-import zishu.xiatools.Listener.CommandDelay;
-import zishu.xiatools.XIATools;
+import top.z1shu.Listener.CommandDelay;
+import top.z1shu.Main;
 
 import java.util.Random;
 
@@ -29,12 +29,12 @@ public class RandomTpCommand implements CommandExecutor {
                             potion1.apply(player);
                             potion2.apply(player);
                             potion3.apply(player);
-                            player.sendMessage(XIATools.prefix + " 正在传送... 请稍等");
+                            player.sendMessage(Main.TipPerfix + "正在传送... 请稍等。");
                             CommandDelay.commandDelay.put(player.getName(), System.currentTimeMillis());
                         }
 
                     } else {
-                        sender.sendMessage(XIATools.prefix + " 随机传送时间冷却时间为5分钟");
+                        sender.sendMessage(Main.WarnPrefix + "随机传送时间冷却时间为5分钟!");
                     }
                 }else{if (!player.getWorld().getName().equalsIgnoreCase("world_nether")&&!player.getWorld().getName().equalsIgnoreCase("world_the_end")) {
                     Player p = (Player) sender;
@@ -45,7 +45,7 @@ public class RandomTpCommand implements CommandExecutor {
                     potion1.apply(p);
                     potion2.apply(p);
                     potion3.apply(p);
-                    player.sendMessage(XIATools.prefix + " 正在传送... 请稍等");
+                    player.sendMessage(Main.TipPerfix+ "正在传送... 请稍等。");
                 }
                 }
             }

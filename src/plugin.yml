@@ -1,5 +1,5 @@
-name: XIATools
-main: zishu.xiatools.XIATools
+name: Common
+main: top.z1shu.Main
 author: Z1SHU
 version: 1.0.0
 commands:
