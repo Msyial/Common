@@ -1,10 +1,32 @@
 name: XIATools
 main: zishu.xiatools.XIATools
 author: Z1SHU
-version: 1.0
+version: 1.0.0
 commands:
   Fly:
-    usage: "/Fly"
-    description: "开关飞行"
+    description: "/Fly"
+    permission: XIATools.Fly
+
   Feed:
-    usage: "/Feed"
+    description: "/Feed"
+    permission: XIATools.Feed
+
+  SetHome:
+    description: "/SetHome"
+
+  Home:
+    description: "/Home"
+
+  Back:
+    description: "/Back"
+
+  tpr:
+    aliases: rtp
+    description: "/tpr"
+
+  Help:
+    description: "/Help"
+
+  Heal:
+    description: "/Heal"
+    permission: XIATools.Heal
