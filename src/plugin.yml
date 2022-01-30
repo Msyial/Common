@@ -1,1 +1,10 @@
-saveDefaultConfig();
+name: XIATools
+main: zishu.xiatools.XIATools
+author: Z1SHU
+version: 1.0
+commands:
+  Fly:
+    usage: "/Fly"
+    description: "开关飞行"
+  Feed:
+    usage: "/Feed"
